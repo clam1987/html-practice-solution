@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eternal Dream</title>
+    <!-- Bootstrap Dependancies -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Boostrap CDN for styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <!-- Our own CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+  </head>
+  <body>
+      <!-- Container fluid changes the container to wrap around the whole width of the screen -->
+    <div class="container-fluid">
+        
+        <!-- Navbar Section-->
+        <!-- Deleted 'bg-light' because it would override any css with bootstrap's own background color -->
+        <!-- 'fixed-top' changes our navbar to always be at the top and as we scroll down our page, our nav stays in place. (css behind 'fixed-top' "position: fixed; bottom: 100%"  *I think lol) -->
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+          <!-- Navbar Brand -->
+        <a class="navbar-brand" href="#home"><span
+            ><img
+              src="./assets/img/350071.svg"
+              height="40px"
+              width="40px"
+              style="margin-right: 10px" /></span
+          >Eternal Dream</a
+        >
+        <!-- Button will only show up on screens smaller then 978px I believe, it's there for media queries, if your screen exceeds 978, a normal navbar will be rendered -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Navbar Items -->
+            <!-- We change the href's to reflect each id so that when clicked, it takes us to the corresponding area -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item nav-buttons">
+              <a class="nav-link" href="#home"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item nav-buttons">
+              <a class="nav-link" href="#story">Story</a>
+            </li>
+            <li class="nav-item nav-buttons">
+              <a class="nav-link" href="#character">Character</a>
+            </li>
+            <li class="nav-item nav-buttons">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Header -->
+      <!-- Using boostraps Jumbotron -->
+      <header class="jumbotron jumbotron-fluid title-container">
+        <div class="container" id="home">
+          <p class="display-4">Eternal Dream</p>
+        </div>
+      </header>
+
+      <!-- Image container -->
+
+      <section class="container final-fantasy">
+          <!-- 'img-fluid' is bootstraps class that dynamically shifts the image based upon the view width of the browser -->
+        <img
+          class="img-fluid"
+          src="./assets/img/finalfantasy.jpg"
+          alt="finalfantasy"
+        />
+      </section>
+      
+      <!-- Story Section -->
+
+      <!-- 'my-5' stands for margin y axis and the 5 is bootstraps unit of measurement -->
+      <!-- this applies margin top and bottom -->
+      <section class="container text-bg my-5">
+        <div class="row">
+          <div class="col-sm-12" id="story">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci
+            ab doloribus veniam ipsa ipsam ullam reiciendis corporis suscipit
+            tempore, recusandae deserunt dolore repellendus explicabo placeat
+            consectetur quia sed fugiat voluptate totam ratione eius dignissimos
+            voluptatum earum enim! Ullam pariatur quia reiciendis, ipsum maxime
+            quis sunt adipisci voluptas, autem voluptate dolorem consequatur
+            itaque esse cumque. Quas natus inventore quibusdam saepe harum
+            maxime voluptates quaerat eum ad dolor neque pariatur id, omnis
+            maiores, porro illum est veniam dicta. Labore debitis doloremque
+            consequatur maiores inventore molestias fugit dolorem in, sequi
+            accusamus impedit, iste eligendi perspiciatis quidem, temporibus
+            odio exercitationem! Aut aliquid facilis dolorum sequi enim,
+            temporibus eos expedita animi? Repudiandae, minima sapiente. Vitae
+            corrupti reprehenderit, eligendi aut fuga consequuntur in ex eveniet
+            quis. Culpa assumenda animi beatae nobis neque hic explicabo
+            excepturi quam ratione fugit ad, pariatur odit, officia ducimus.
+            Omnis facere architecto eligendi earum nesciunt. Quisquam magnam
+            porro veritatis impedit veniam in enim id dolores, assumenda facere
+            illo culpa ex cum aliquam repellat vel dolorum! Dolore odio aperiam
+            assumenda vitae dignissimos pariatur. Vero esse officiis beatae non
+            fugit eveniet. Natus nulla alias quo dolores officiis harum ipsa
+            nostrum a incidunt ullam suscipit, vitae sit perspiciatis quis
+            tenetur molestiae qui libero provident voluptatibus totam rerum
+            earum quaerat quisquam in. Incidunt, eveniet non earum doloribus
+            tenetur perferendis maiores aut quibusdam quas repudiandae adipisci
+            aliquam, consequuntur ex id maxime illum odit impedit vel quia
+            praesentium modi perspiciatis assumenda explicabo exercitationem?
+            Expedita perferendis ullam maiores excepturi optio molestias soluta
+            animi, autem et, fuga, doloremque quae error. Quaerat dignissimos
+            rerum quia optio iusto nulla atque labore repellendus nam sequi.
+            Corporis dolores porro esse, accusantium et aliquid laborum incidunt
+            temporibus eius quae, similique nihil. Quasi nobis atque reiciendis
+            quaerat cupiditate quos in, ut quas, quis vel, suscipit omnis rem
+            labore veniam perferendis magni cum est a soluta ab?
+          </div>
+        </div>
+      </section>
+
+      <!-- Character Section -->
+      
+      <section class="container" id="character">
+        <div class="row my-2">
+          <div class="col-sm-4 role">
+            <img src="./assets/img/paladin.jpg" alt="paladin" class="img-thumbnail" width="150px" height="150px"/>
+            Paladin
+          </div>
+          <div class="col-sm-8 role-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+            est laboriosam explicabo beatae eveniet exercitationem provident.
+            Quasi necessitatibus similique debitis facere, in architecto hic
+            saepe autem. Illum magnam eius amet.
+          </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-sm-4 role">
+              <img src="./assets/img/mage.jpg" alt="mage" class="img-thumbnail" width="150px" height="150px"/>
+              Mage
+            </div>
+            <div class="col-sm-8 role-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              est laboriosam explicabo beatae eveniet exercitationem provident.
+              Quasi necessitatibus similique debitis facere, in architecto hic
+              saepe autem. Illum magnam eius amet.
+            </div>
+          </div>
+          <div class="row my-2">
+            <div class="col-sm-4 role">
+              <img src="./assets/img/bard.png" alt="paladin" class="img-thumbnail" width="150px" height="150px"/>
+              Archer
+            </div>
+            <div class="col-sm-8 role-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              est laboriosam explicabo beatae eveniet exercitationem provident.
+              Quasi necessitatibus similique debitis facere, in architecto hic
+              saepe autem. Illum magnam eius amet.
+            </div>
+          </div>
+      </section>
+    </div>
+  </body>
+</html>

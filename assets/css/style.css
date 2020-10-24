@@ -1,0 +1,113 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Trade+Winds&display=swap');
+/* Font Props */
+/* 
+font-family: 'Dancing Script', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Trade Winds', cursive;
+*/
+
+/* CSS taken from https://css-tricks.com/perfect-full-page-background-image/ to get a background image to cover the whole page*/
+
+body { 
+    background: url('../img/landing-page.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+a {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* rem is a measure of units based on the inital scale in the head html 1rem = 16px */
+nav > a {
+    font-family: 'Trade Winds', cursive;
+    font-size: 1.5rem;
+}
+
+.title-container {
+    background-color: rgba(0,0,0,0);
+}
+
+/* animation is a property in css that allows you to animate your elements */
+.display-4 {
+    font-family: 'Trade Winds', cursive;
+    color: #07633f;
+    font-size: 5rem;
+    text-align: center;
+    animation: pulse 2s;
+}
+
+/* controls the logic of your animation at each specific frame from start to finish. Start 0%, finish 100% */
+
+@keyframes pulse {
+    0% {
+      color: rgba(69, 144, 191, .3);
+    }
+    25% {
+        color: rgba(92, 215, 242, .5);
+    }
+    50% {
+        color: rgba(206, 236, 242, .7);
+    }
+    75% {
+        color: rgba(68, 242, 225, .85)
+    }
+    100% {
+      color: rgba(7, 99, 63, 1);
+    }
+  }
+
+  /* Pseudo class hover allows you to apply some styling when you hover over an element */
+
+.display-4:hover {
+    color: #5CD7F2
+}
+
+.text-bg {
+    background-color: rgba(206, 236, 242, .5);
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    border-radius: 5%;
+    animation: text-bg-pulse 2s
+}
+
+@keyframes text-bg-pulse {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: .25;
+    }
+    50% {
+        opacity: .5;
+    }
+    75% {
+        opacity: .7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.text-bg:hover {
+    background-color: #fff7df;
+}
+
+#character {
+    background-color: #CEECF2;
+}
+
+#character:hover {
+    background-color: #F28D77;
+}
+
+.role {
+    font-family: 'Trade Winds', cursive;
+}
+
+.role-description {
+    font-family: 'Trade Winds', cursive;
+}
